@@ -15,14 +15,22 @@ public class Main01 {
     public static void main(String[] args)
     {
         AIMLInterpreter interpreter = new AIMLInterpreter();
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("salutations.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("countries.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("x11colors.xml")));
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("punctuation.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("abbreviations.xml")));
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("british_to_us.xml")));
+
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("salutations.xml")));
+
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("countries.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("famous.xml")));
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("x11colors.xml")));
+
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("coinflip.xml")));
+
         interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("jokes.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("nerdy.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("coinflip.xml")));
+
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("insults.xml")));
 
         System.out.println("Currently " + interpreter.countNodes() + " nodes in the AIML system.");
 

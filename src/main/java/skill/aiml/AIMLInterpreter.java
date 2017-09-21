@@ -80,7 +80,7 @@ public class AIMLInterpreter {
         }
 
         // TEMPLATE
-        else if(n.getType() == AIMLNodeType.TEMPLATE)
+        else if(n.getType() == AIMLNodeType.TEMPLATE || n.getType() == AIMLNodeType.LIST_ITEM)
         {
             String outputTxt = "";
             for(AIMLNode tmp : n.getChildren())
@@ -94,6 +94,7 @@ public class AIMLInterpreter {
         else if(n.getType() == AIMLNodeType.REDIRECT)
         {
             String redirect = process(n.firstChild(AIMLNodeType.TEXT), m, s);
+            // System.out.println("[" + redirect + "]");
             return process(redirect);
         }
 
@@ -109,7 +110,8 @@ public class AIMLInterpreter {
         else if(n.getType() == AIMLNodeType.RANDOM)
         {
             List<AIMLNode> childNodes = new ArrayList<>(n.getChildren());
-            return process(childNodes.get(RND.nextInt(childNodes.size())).firstChild(AIMLNodeType.TEXT), m, s);
+            int rndIndex = RND.nextInt(childNodes.size());
+            return process(childNodes.get(rndIndex), m, s);
         }
 
         // default

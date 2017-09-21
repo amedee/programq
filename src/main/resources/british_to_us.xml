@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- -->
+    <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- Last modified 10/5/2011 -->
+    <!-- -->
+    <category>
+        <pattern>(.*)ACTION REPLAY(.*)</pattern>
+        <template>
+            <redirect>\1INSTANT REPLAY\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)AEROFOIL(.*)</pattern>
+        <template>
+            <redirect>\1AIRFOIL\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)AEROPLANE(.*)</pattern>
+        <template>
+            <redirect>\1AIRPLANE\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)ALLEN KEY(.*)</pattern>
+        <template>
+            <redirect>\1ALLEN WRENCH\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)ALUMINIUM(.*)</pattern>
+        <template>
+            <redirect>\1ALUMINUM\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)ANTICLOCKWISE(.*)</pattern>
+        <template>
+            <redirect>\1COUNTERCLOCKWISE\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)AUBERGINE(.*)</pattern>
+        <template>
+            <redirect>\1EGGPLANT\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)AEROFOIL(.*)</pattern>
+        <template>
+            <redirect>\1AIRFOIL\2</redirect>
+        </template>
+    </category>
+    <!-- B -->
+    <category>
+        <pattern>(.*)BLANKET BATH(.*)</pattern>
+        <template>
+            <redirect>\1SPONGE BATH\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)BLOCK OF FLATS(.*)</pattern>
+        <template>
+            <redirect>\1APPARTMENT BUILDING\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)BOILER SUIT(.*)</pattern>
+        <template>
+            <redirect>\1COVERALL\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)BOOB TUBE(.*)</pattern>
+        <template>
+            <redirect>\1TUBE TOP\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)BREAKDOWN VAN(.*)</pattern>
+        <template>
+            <redirect>\1TOW TRUCK\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)BREEZE BLOCK(.*)</pattern>
+        <template>
+            <redirect>\1CINDER BLOCK\2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)BUM BAG(.*)</pattern>
+        <template>
+            <redirect>\1FANNY PACK\2</redirect>
+        </template>
+    </category>
+</aiml>

@@ -5,6 +5,7 @@ package skill.aiml;
  */
 public enum AIMLNodeType {
     CATEGORY,
+    LIST_ITEM,
     PATTERN,
     RANDOM,
     REDIRECT,

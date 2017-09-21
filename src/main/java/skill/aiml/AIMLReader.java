@@ -47,6 +47,8 @@ public class AIMLReader {
             outputNode.setType(AIMLNodeType.REDIRECT);
         else if(e.getName().equalsIgnoreCase("template"))
             outputNode.setType(AIMLNodeType.TEMPLATE);
+        else if(e.getName().equalsIgnoreCase("li"))
+            outputNode.setType(AIMLNodeType.LIST_ITEM);
 
         for(Content child : e.getContent())
         {
@@ -57,10 +59,8 @@ public class AIMLReader {
                 if(outputNode.getType() == AIMLNodeType.RANDOM)
                     continue;
                 String text = ((Text) child).getText();
-                while(text.contains("\n") || text.contains("\t"))
-                    text = text.replaceAll("[\\n\\t]+","");
-                while(text.contains("  "))
-                    text = text.replaceAll("  "," ");
+                if(outputNode.getType() == AIMLNodeType.TEMPLATE || outputNode.getType() == AIMLNodeType.LIST_ITEM)
+                    text = normalizeOutput(text);
                 if(!text.isEmpty() && !text.equals(" "))
                     outputNode.addChild(new AIMLNode().setType(AIMLNodeType.TEXT).setText(text));
             }
@@ -74,4 +74,12 @@ public class AIMLReader {
         return outputNode;
     }
 
+    private static String normalizeOutput(String text)
+    {
+        while(text.contains("\n") || text.contains("\t"))
+            text = text.replaceAll("[\\n\\t]+","");
+        while(text.contains("  "))
+            text = text.replaceAll("  ", " ");
+        return text;
+    }
 }
