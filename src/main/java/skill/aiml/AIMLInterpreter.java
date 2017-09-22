@@ -71,6 +71,11 @@ public class AIMLInterpreter {
         return process(node, matcher, s);
     }
 
+    public String redirect(String s)
+    {
+        return process(s);
+    }
+
     private String process(AIMLNode n, Matcher m, String s)
     {
         // CATEGORY
@@ -93,9 +98,8 @@ public class AIMLInterpreter {
         // REDIRECT
         else if(n.getType() == AIMLNodeType.REDIRECT)
         {
-            String redirect = process(n.firstChild(AIMLNodeType.TEXT), m, s);
-            // System.out.println("[" + redirect + "]");
-            return process(redirect);
+            String targetTxt = process(n.firstChild(AIMLNodeType.TEXT), m, s);
+            return redirect(targetTxt);
         }
 
         // TEXT

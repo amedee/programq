@@ -1,9 +1,13 @@
 package main;
 
+import bot.Bot;
 import skill.aiml.AIMLInterpreter;
 import skill.aiml.AIMLReader;
 import skill.aiml.AIMLNode;
+import skill.aiml.AIMLSkill;
+import skill.machinelearning.NNSkill;
 
+import java.io.File;
 import java.util.Collection;
 import java.util.Scanner;
 
@@ -14,32 +18,22 @@ public class Main01 {
 
     public static void main(String[] args)
     {
-        AIMLInterpreter interpreter = new AIMLInterpreter();
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("punctuation.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("abbreviations.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("british_to_us.xml")));
 
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("salutations.xml")));
+        Bot bot = new Bot();
+        bot.addSkill(new AIMLSkill());
 
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("countries.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("famous.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("x11colors.xml")));
+        File wFile = new File(System.getProperty("user.home"),"par_2_vec_programq");
+        File nFile = new File(System.getProperty("user.home"),"par2par_nn_programq");
+        File cFile = new File("/home/joris/Downloads/cornell_movie_dialogs_corpus/cornell movie-dialogs corpus");
 
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("coinflip.xml")));
-
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("jokes.xml")));
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("nerdy.xml")));
-
-        interpreter.addAIMLNodes(AIMLReader.interpretXML(Main01.class.getClassLoader().getResourceAsStream("insults.xml")));
-
-        System.out.println("Currently " + interpreter.countNodes() + " nodes in the AIML system.");
+        bot.addSkill(new NNSkill(wFile, nFile, cFile));
 
         Scanner sc = new Scanner(System.in);
         String line = "";
         while(!line.equals("STOP"))
         {
             line = sc.nextLine();
-            System.out.println(interpreter.process(line));
+            System.out.println(bot.process(line));
         }
     }
 

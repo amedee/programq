@@ -21,7 +21,7 @@ public class Bot {
         for(ISkill skill : skillList)
         {
             if(skill.isExampleUtterance(s))
-                return skill.process(s);
+                return skill.process(this, s);
         }
         return null;
     }

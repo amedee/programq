@@ -7,6 +7,6 @@ public interface ISkill {
 
     boolean isExampleUtterance(String s);
 
-    String process(String s);
+    String process(Bot bot, String s);
 
 }
