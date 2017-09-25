@@ -9,6 +9,7 @@ public enum AIMLNodeType {
     PATTERN,
     RANDOM,
     REDIRECT,
+    SCRIPT,
     TEMPLATE,
     TEXT
 }

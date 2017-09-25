@@ -1,8 +1,12 @@
 package main;
 
 import bot.Bot;
+import bot.BotHistoryKeeper;
 import skill.aiml.AIMLSkill;
 
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import java.io.File;
 import java.util.Scanner;
 
@@ -11,11 +15,11 @@ import java.util.Scanner;
  */
 public class Main01 {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws ScriptException {
 
         Bot bot = new Bot();
         bot.addSkill(new AIMLSkill());
+        bot.addListener(new BotHistoryKeeper());
 
         Scanner sc = new Scanner(System.in);
         String line = "";

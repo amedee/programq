@@ -1,5 +1,10 @@
 package skill.aiml;
 
+import jdk.nashorn.internal.runtime.Context;
+
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
+import javax.script.ScriptException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -116,6 +121,17 @@ public class AIMLInterpreter {
             List<AIMLNode> childNodes = new ArrayList<>(n.getChildren());
             int rndIndex = RND.nextInt(childNodes.size());
             return process(childNodes.get(rndIndex), m, s);
+        }
+
+        // SCRIPT
+        else if(n.getType() == AIMLNodeType.SCRIPT)
+        {
+            ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
+            try {
+                return engine.eval(n.firstChild(AIMLNodeType.TEXT).getText()).toString();
+            } catch (ScriptException e) {
+                e.printStackTrace();
+            }
         }
 
         // default

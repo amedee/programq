@@ -49,6 +49,8 @@ public class AIMLReader {
             outputNode.setType(AIMLNodeType.TEMPLATE);
         else if(e.getName().equalsIgnoreCase("li"))
             outputNode.setType(AIMLNodeType.LIST_ITEM);
+        else if(e.getName().equalsIgnoreCase("script"))
+            outputNode.setType(AIMLNodeType.SCRIPT);
 
         for(Content child : e.getContent())
         {
