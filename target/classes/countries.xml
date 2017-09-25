@@ -10,6 +10,24 @@
     <!-- Last modified 10/5/2011 -->
     <!-- -->
     <category>
+        <pattern>WHERE IS (.*)</pattern>
+        <template>
+            <redirect>\1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>.* TELL ME ABOUT (.*)</pattern>
+        <template>
+            <redirect>\1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME ABOUT (.*)</pattern>
+        <template>
+            <redirect>\1</redirect>
+        </template>
+    </category>
+    <category>
         <pattern>ALBANIA</pattern>
         <template>Albania (officially called Republic of Albania; Albanian: Shqipëria) is an independent republic in Southeastern Europe, with an area of 28,748 square kilometres (11,100 sq mi). The capital is Tirana, and other important cities are Durrës, Elbasan and Vlora.</template>
     </category>
@@ -223,7 +241,7 @@
     </category>
     <category>
         <pattern>DENMARK</pattern>
-        <template />
+        <template>Denmark (Danish: Danmark), officially named the Kingdom of Denmark, is a Nordic country in Northern Europe. It is the furthest south of the Scandinavian countries, to the south of Norway and south-west of Sweden (which it is connected to by a bridge). It has a south border with Germany. It borders both the North Sea to the west and the Baltic Sea to the east.</template>
     </category>
     <category>
         <pattern>DJIBOUTI</pattern>
@@ -251,11 +269,11 @@
     </category>
     <category>
         <pattern>EL SALVADOR</pattern>
-        <template>White: 17%</template>
+        <template>El Salvador (Spanish: República de El Salvador) is the smallest and most densely populated country in Central America. The country's capital and largest city is San Salvador. Other important cities are: Santa Ana and San Miguel. El Salvador borders the Pacific Ocean on the south, and the countries of Guatemala to the west and Honduras to the north and east.</template>
     </category>
     <category>
         <pattern>EQUATORIAL GUINEA</pattern>
-        <template />
+        <template>The Republic of Equatorial Guinea is a nation in west central Africa, and one of the smallest countries in Africa. It borders Cameroon on the north, Gabon on the south and east, and the Gulf of Guinea on the west. In the past, it was the Spanish colony of Spanish Guinea. The country's territory is both on the continent and on islands. The continental part is known as Río Muni. On one island, Bioko, is the capital, Malabo.</template>
     </category>
     <category>
         <pattern>ERITREA</pattern>
@@ -263,7 +281,7 @@
     </category>
     <category>
         <pattern>ESTONIA</pattern>
-        <template />
+        <template>Estonia officially the Republic of Estonia (Estonian: Eesti Vabariik) is a small country in the Baltic Region of Northern Europe. The capital city is Tallinn. Estonia's neighbors are Sweden, Finland, Russia and Latvia. Its population is 1,332,893.</template>
     </category>
     <category>
         <pattern>ETHIOPIA</pattern>
@@ -283,11 +301,11 @@
     </category>
     <category>
         <pattern>FINLAND</pattern>
-        <template />
+        <template>Finland (Suomi in Finnish) is a country in Northern Europe and is a member state of the European Union. Finland is one of the Nordic countries and is also part of Fennoscandia. Finland is located between the 60th and 70th latitudes North. Its neighbours are Sweden to the west, Norway to the north, Russia to the east and Estonia to the south, beyond the sea called Gulf of Finland. Most of western and southern coast is on the shore of the Baltic Sea.</template>
     </category>
     <category>
         <pattern>FRANCE</pattern>
-        <template />
+        <template>France (French: France), officially the French Republic (French: République française), is a country in Western Europe. Its capital city is Paris. It is a member of the European Union. It is known for its culture, its many monuments and structures, and places such as the Louvre, the Eiffel Tower, the Arc de Triomphe, Giverny, Mont Saint Michel, Versailles, and Notre Dame de Paris. France is divided into 13 régions that are further subdivided départements.</template>
     </category>
     <category>
         <pattern>FRENCH GUIANA</pattern>
