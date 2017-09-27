@@ -325,11 +325,11 @@
     </category>
     <category>
         <pattern>GEORGIA</pattern>
-        <template />
+        <template>Georgia is a country in Eastern Europe, located on the coast of the Black Sea. During 1991-1995 its full name was the Republic of Georgia but since 1995 it is Georgia as written in the Constitution. Before, it was part of the Soviet Union, but now it is an independent republic. The capital city is Tbilisi. Its population is almost 5 million.</template>
     </category>
     <category>
         <pattern>GERMANY</pattern>
-        <template />
+        <template>The Federal Republic of Germany, also called Germany, is a country in Central Europe. The country's full name is sometimes shortened to the FRG (or the BRD, in German). To the north of Germany are the North Sea, the Baltic Sea, and the country of Denmark. To the east of Germany are the countries of Poland and the Czech Republic. To the south of Germany are the countries of Austria and Switzerland. To the west of Germany are the countries of France, Luxembourg, Belgium, and the Netherlands.</template>
     </category>
     <category>
         <pattern>GHANA</pattern>
@@ -341,7 +341,7 @@
     </category>
     <category>
         <pattern>GREECE</pattern>
-        <template />
+        <template>Greece, officially the Hellenic Republic is a country in Southeastern Europe. Its capital city is Athens. It borders Albania, the Republic of Macedonia and Bulgaria to the north, and Turkey to the east. The Aegean Sea is to the east and south of mainland Greece, the Ionian Sea is to the west. Both are part of the Eastern Mediterranean Sea and have many islands.</template>
     </category>
     <category>
         <pattern>GREENLAND</pattern>
@@ -369,7 +369,7 @@
     </category>
     <category>
         <pattern>GUINEA</pattern>
-        <template />
+        <template>Guinea, or the Republic of Guinea, is an independent nation in western Africa. They speak French. It's a member of Economic Community of West African States.</template>
     </category>
     <category>
         <pattern>GUINEA-BISSAU</pattern>
@@ -393,15 +393,15 @@
     </category>
     <category>
         <pattern>HUNGARY</pattern>
-        <template />
+        <template>Hungary is a country in Central Europe. Its capital city is Budapest. Hungary is slightly bigger than its western neighbour Austria and has about 10 million inhabitants. Other countries that border Hungary are Slovakia, Ukraine, Romania, Serbia, Croatia and Slovenia.</template>
     </category>
     <category>
         <pattern>ICELAND</pattern>
-        <template />
+        <template>Iceland is an island country in the North Atlantic, between Greenland and Norway, formerly a possession of Denmark. It is culturally considered to be part of Europe. Iceland is 301 kilometres east of Greenland and 1001 kilometres west of Norway. There are about 329,100 people who live in Iceland. Iceland has an area of 103,000 km².</template>
     </category>
     <category>
         <pattern>INDIA</pattern>
-        <template>The Republic of India (Hindi: भारत गणराज्य) is a country in Asia. It is at the center of South Asia. India has more than 1.2 billion (1,210,000,000) people, which is the second largest population in the world. It is the seventh largest country in the world by area and the largest country in South Asia. It is also the most populous democracy in the world.</template>
+        <template>The Republic of India is a country in Asia. It is at the center of South Asia. India has more than 1.2 billion (1,210,000,000) people, which is the second largest population in the world. It is the seventh largest country in the world by area and the largest country in South Asia. It is also the most populous democracy in the world.</template>
     </category>
     <category>
         <pattern>INDONESIA</pattern>
@@ -409,7 +409,7 @@
     </category>
     <category>
         <pattern>IRAN</pattern>
-        <template>Iran (Persian: ايران), once known as Persia, is a country in Western Asia. It is part of the Middle East region. It shares borders with Afghanistan, Armenia, Azerbaijan, Iraq, Pakistan, Turkey, and Turkmenistan.</template>
+        <template>Iran once known as Persia, is a country in Western Asia. It is part of the Middle East region. It shares borders with Afghanistan, Armenia, Azerbaijan, Iraq, Pakistan, Turkey, and Turkmenistan.</template>
     </category>
     <category>
         <pattern>IRAQ</pattern>
@@ -421,7 +421,7 @@
     </category>
     <category>
         <pattern>ISLE OF MAN</pattern>
-        <template />
+        <template>The Isle of Man is an island in the Irish Sea, off the coast of Great Britain (of which it is a crown dependency). Douglas is the capital city. It also has a flag with a red background and 3 armoured legs joined together - "whichever way you throw us, we always land on our feet". It has a Parliament called Tynwald. It is the longest running parliament in the world.</template>
     </category>
     <category>
         <pattern>ISRAEL</pattern>
@@ -429,7 +429,7 @@
     </category>
     <category>
         <pattern>ITALY</pattern>
-        <template />
+        <template>Italy is a country in Europe and a member of the European Union. Its official name is Repubblica Italiana. Italy is a democratic republic and is a founding member of the European Union. Italy is also a member of the G8, as it has the 8th largest Gross Domestic Product in the world.</template>
     </category>
     <category>
         <pattern>JAMAICA</pattern>
@@ -437,7 +437,7 @@
     </category>
     <category>
         <pattern>JAPAN</pattern>
-        <template>Japan (Japanese: 日本) is a country in East Asia. It is a group of many islands close to the east coast of Korea, China and Russia. The Pacific Ocean is to the east of Japan and the Sea of Japan is to the west. Most people in Japan live on one of four of the islands. The biggest of these islands, Honshu, has the most people. Honshu is the 7th largest island in the world. Tokyo is the capital of Japan and its biggest city.</template>
+        <template>Japan is a country in East Asia. It is a group of many islands close to the east coast of Korea, China and Russia. The Pacific Ocean is to the east of Japan and the Sea of Japan is to the west. Most people in Japan live on one of four of the islands. The biggest of these islands, Honshu, has the most people. Honshu is the 7th largest island in the world. Tokyo is the capital of Japan and its biggest city.</template>
     </category>
     <category>
         <pattern>JERSEY</pattern>
@@ -469,11 +469,11 @@
     </category>
     <category>
         <pattern>LAOS</pattern>
-        <template />
+        <template>Lao People's Democratic Republic, or Laos country for short, is a country in southeast Asia. The capital of Laos is Vientiane. Laos is landlocked (it does not have a coast on a sea or ocean). It is bordered by Myanmar (used to be known in English as "Burma") and by China to the northwest, by Vietnam to the east, by Cambodia to the south, and by Thailand to the west.</template>
     </category>
     <category>
         <pattern>LATVIA</pattern>
-        <template />
+        <template>Latvia is a country in Northern Europe. The capital is Riga. It is one of the Baltic States, together with Estonia in the north and Lithuania in the south. Latvia's neighbours to the east are the countries Russia and Belarus. Latvia is split into four parts called Kurzeme, Vidzeme, Zemgale, and Latgale.</template>
     </category>
     <category>
         <pattern>LEBANON</pattern>
@@ -481,7 +481,7 @@
     </category>
     <category>
         <pattern>LESOTHO</pattern>
-        <template />
+        <template>Lesotho is a small country in southern Africa. Its population is about 1,800,000. The capital of Lesotho is called Maseru.</template>
     </category>
     <category>
         <pattern>LIBERIA</pattern>
@@ -493,19 +493,19 @@
     </category>
     <category>
         <pattern>LIECHTENSTEIN</pattern>
-        <template />
+        <template>Liechtenstein is a country in Western Europe. It is the sixth smallest country in the world and, with Uzbekistan, one of only two doubly landlocked countries. This means that it is landlocked by a landlocked country. Liechtenstein is between Austria and Switzerland. It was a part of the Holy Roman Empire until 1806 when it became an independent principality.</template>
     </category>
     <category>
         <pattern>LITHUANIA</pattern>
-        <template />
+        <template>Lithuania is a country in northern Europe on the eastern shore of the Baltic Sea. Lithuania is a member of the European Union, NATO, and several other organizations. About 3,000,000 people live in the country. The official language is Lithuanian which is spoken by more than 82% of the people. Vilnius is the capital and largest city.</template>
     </category>
     <category>
         <pattern>LUXEMBOURG</pattern>
-        <template />
+        <template>Luxembourg is a country in Western Europe; its official name is the Grand Duchy of Luxembourg. It is a small country in land area. It was one of the first countries in the European Union. It is also a member of the Benelux. The countries next to Luxembourg are Belgium, Germany, and France. In 2015, its population was 569,700, making it one of Europe's most densely populated countries.</template>
     </category>
     <category>
         <pattern>MACEDONIA</pattern>
-        <template>Macedonia or Macedonian may refer to:</template>
+        <template>Macedonia is an independent state on the Balkan peninsula in the center. The country borders Serbia to the north, Albania to the west, Greece to the south, and Bulgaria to the east. The capital is Skopje.</template>
     </category>
     <category>
         <pattern>MADAGASCAR</pattern>
@@ -553,7 +553,7 @@
     </category>
     <category>
         <pattern>METROPOLITAN FRANCE</pattern>
-        <template>Metropolitan France (French: France métropolitaine or la Métropole) is the part of France that is in Europe. It can also be described as mainland France plus the island of Corsica. By contrast, Overseas France (France d'outre-mer) is the collective name for all of the French overseas departments, territories and collectivities and New Caledonia. Metropolitan France and Overseas France together form the French Republic.</template>
+        <template>Metropolitan France is the part of France that is in Europe. It can also be described as mainland France plus the island of Corsica. By contrast, Overseas France (France d'outre-mer) is the collective name for all of the French overseas departments, territories and collectivities and New Caledonia. Metropolitan France and Overseas France together form the French Republic.</template>
     </category>
     <category>
         <pattern>MEXICO</pattern>
@@ -585,7 +585,7 @@
     </category>
     <category>
         <pattern>MOROCCO</pattern>
-        <template>Kingdom of Morocco (Berber: Tagldit n Murakuc, Arabic: المملكة المغربية) is a country in North Africa.</template>
+        <template>Kingdom of Morocco is a country in North Africa.</template>
     </category>
     <category>
         <pattern>MOZAMBIQUE</pattern>
@@ -601,7 +601,7 @@
     </category>
     <category>
         <pattern>NEPAL</pattern>
-        <template>Nepal (Nepali: नेपाल) is a country in South Asia bordering the Republic of India and the People's Republic of China. Mount Everest, the highest mountain in the world, is found there, as well as the Himalaya Mountains. 12 of the world's 18 highest mountain peaks are in Nepal. It is also the birthplace of Buddha. It has recently become a secular country, but before it was the only Hindu kingdom in the world. Nepal is a very important pilgrimage place for both Hindus and Buddhists. The population of Nepal in 2007 was almost 29 million people. Nepali is the official language, and there are many other regional languages. English and Hindi are widely understood. The capital city of Nepal is Kathmandu which has a population of over two million people. The second largest city is Pokhara. Pokhara is a major tourist attraction of Nepal which is rich in natural beauty. Pokhara includes many lakes, Phewa Tal is one of them.</template>
+        <template>Nepal is a country in South Asia bordering the Republic of India and the People's Republic of China. Mount Everest, the highest mountain in the world, is found there, as well as the Himalaya Mountains. 12 of the world's 18 highest mountain peaks are in Nepal. It is also the birthplace of Buddha. It has recently become a secular country, but before it was the only Hindu kingdom in the world. Nepal is a very important pilgrimage place for both Hindus and Buddhists. The population of Nepal in 2007 was almost 29 million people. Nepali is the official language, and there are many other regional languages. English and Hindi are widely understood. The capital city of Nepal is Kathmandu which has a population of over two million people. The second largest city is Pokhara. Pokhara is a major tourist attraction of Nepal which is rich in natural beauty. Pokhara includes many lakes, Phewa Tal is one of them.</template>
     </category>
     <category>
         <pattern>NETHERLANDS</pattern>
@@ -637,7 +637,7 @@
     </category>
     <category>
         <pattern>NORFOLK ISLAND</pattern>
-        <template>Norfolk Island (Norfuk: Norfuk Ailen) is a territory of Australia. It is in the South Pacific Ocean between Australia, New Zealand, and New Caledonia. It was one of the first British settlements in the Pacific. Twice it was used as a penal colony. People from Pitcairn Island were moved to Norfolk Island. It is now a popular place for holidays.</template>
+        <template>Norfolk Island is a territory of Australia. It is in the South Pacific Ocean between Australia, New Zealand, and New Caledonia. It was one of the first British settlements in the Pacific. Twice it was used as a penal colony. People from Pitcairn Island were moved to Norfolk Island. It is now a popular place for holidays.</template>
     </category>
     <category>
         <pattern>NORTH KOREA</pattern>
@@ -833,7 +833,7 @@
     </category>
     <category>
         <pattern>SWEDEN</pattern>
-        <template />
+        <template>Sweden is a Nordic country in the part of Europe called Scandinavia. Its neighbors are Finland and Norway. Sweden is also connected to Denmark in the south by a bridge. It is a developed country. It is famous for its welfare state. People who live in Sweden are called Swedes.</template>
     </category>
     <category>
         <pattern>SWITZERLAND</pattern>
