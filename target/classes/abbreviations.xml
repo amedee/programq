@@ -8,7 +8,8 @@
     <!-- Complies with AIML 1.0 Tag Set Specification -->
     <!-- as adopted by the ALICE A.I. Foundation.  -->
     <!-- Last modified 10/5/2011 -->
-    <!-- -->
+
+    <!-- I AM -->
     <category>
         <pattern>(.*) I'M (.*)</pattern>
         <template>
@@ -22,6 +23,7 @@
         </template>
     </category>
 
+    <!-- YOU ARE -->
     <category>
         <pattern>(.*) YOU'RE (.*)</pattern>
         <template>
@@ -34,7 +36,20 @@
             <redirect>YOU ARE \1</redirect>
         </template>
     </category>
+    <category>
+        <pattern>(.*) YOU'RE</pattern>
+        <template>
+            <redirect>\1 YOU ARE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU'RE</pattern>
+        <template>
+            <redirect>YOU ARE</redirect>
+        </template>
+    </category>
 
+    <!-- WANT TO -->
     <category>
         <pattern>(.*) WANNA (.*)</pattern>
         <template>
@@ -42,12 +57,51 @@
         </template>
     </category>
     <category>
-        <pattern>WANNA (.*)</pattern>
+        <pattern>YW (.*)</pattern>
         <template>
             <redirect>WANT TO \1</redirect>
         </template>
     </category>
+    <category>
+        <pattern>(.*) WANNA</pattern>
+        <template>
+            <redirect>\1 WANT TO</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WANNA</pattern>
+        <template>
+            <redirect>WANT TO</redirect>
+        </template>
+    </category>
 
+    <!-- DO NOT KNOW -->
+    <category>
+        <pattern>(.*) DUNNO (.*)</pattern>
+        <template>
+            <redirect>\1 DO NOT KNOW \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUNNO (.*)</pattern>
+        <template>
+            <redirect>DO NOT KNOW \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUNNO</pattern>
+        <template>
+            <redirect>\1 DO NOT KNOW</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUNNO</pattern>
+        <template>
+            <redirect>DO NOT KNOW</redirect>
+        </template>
+    </category>
+
+    <!-- WHAT IS -->
     <category>
         <pattern>(.*) WHAT'S (.*)</pattern>
         <template>
@@ -61,6 +115,7 @@
         </template>
     </category>
 
+    <!-- THAT IS -->
     <category>
         <pattern>(.*) THAT'S (.*)</pattern>
         <template>
@@ -74,13 +129,7 @@
         </template>
     </category>
 
-    <category>
-        <pattern>(.+)'VE (.*)</pattern>
-        <template>
-            <redirect>\1 HAVE \2</redirect>
-        </template>
-    </category>
-
+    <!-- WHO IS -->
     <category>
         <pattern>(.*) WHO'S (.*)</pattern>
         <template>
@@ -91,6 +140,14 @@
         <pattern>WHO'S (.*)</pattern>
         <template>
             <redirect>WHO IS \1</redirect>
+        </template>
+    </category>
+
+    <!-- HAVE -->
+    <category>
+        <pattern>(.+)'VE (.*)</pattern>
+        <template>
+            <redirect>\1 HAVE \2</redirect>
         </template>
     </category>
 

@@ -17,6 +17,7 @@ public class AIMLSkill implements ISkill {
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("punctuation.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("abbreviations.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("british_to_us.xml")));
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("teenspeak.xml")));
 
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("salutations.xml")));
 

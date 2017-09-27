@@ -10,6 +10,66 @@
     <!-- Last modified 10/5/2011 -->
     <!-- -->
     <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GOOD EVENING</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GOOD NIGHT</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MORNING</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT'S UP</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SUP</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WELL HELLO</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HELLO THERE</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YO</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOWDY</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
         <pattern>HELLO</pattern>
         <template><redirect>HI</redirect></template>
     </category>
