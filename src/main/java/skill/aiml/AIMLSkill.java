@@ -27,6 +27,7 @@ public class AIMLSkill implements ISkill {
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("x11colors.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("cup_of.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("day.xml")));
+        interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("time.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("is_prime.xml")));
 
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("coinflip.xml")));
