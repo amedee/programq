@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ec660fc-4613-4de4-a300-b059dd4766a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/SynonymAIML.java" afterPath="$PROJECT_DIR$/src/main/java/main/SynonymAIML.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/time.xml" afterPath="$PROJECT_DIR$/src/main/resources/time.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/numbers.xml" afterPath="$PROJECT_DIR$/src/main/resources/numbers.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,16 +22,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="what_happened.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/what_happened.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="843" column="42" lean-forward="false" selection-start-line="843" selection-start-column="42" selection-end-line="843" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="abbreviations.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/abbreviations.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -86,14 +75,24 @@
       <file leaf-file-name="AIMLSkill.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="18" column="118" lean-forward="false" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="time.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="numbers.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/numbers.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="2435" column="7" lean-forward="true" selection-start-line="2435" selection-start-column="7" selection-end-line="2435" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="time.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/time.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
@@ -106,8 +105,8 @@
       <file leaf-file-name="Main01.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -158,10 +157,12 @@
       <find>\&lt;pattern\&gt;.*\.</find>
       <find>&lt;pattern&gt;</find>
       <find>quarter to</find>
+      <find>( .*)</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;pattern&gt;WHO IS</replace>
       <replace>&lt;pattern&gt;WHERE IS</replace>
+      <replace>(.*)</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -221,9 +222,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/what_happened.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/countries.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/is_prime.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/SynonymAIML.java" />
         <option value="$PROJECT_DIR$/src/main/resources/time.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/numbers.xml" />
       </list>
     </option>
   </component>
@@ -874,13 +876,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/15.0/guava-15.0.jar!/com/google/common/collect/AbstractIterator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/reflections/reflections/0.9.10/reflections-0.9.10.jar!/org/reflections/Store.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1140,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/what_happened.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -1196,14 +1183,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/SynonymAIML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -1218,6 +1197,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="18" column="118" lean-forward="false" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/numbers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="2435" column="7" lean-forward="true" selection-start-line="2435" selection-start-column="7" selection-end-line="2435" selection-end-column="7" />
           <folding />
         </state>
       </provider>
