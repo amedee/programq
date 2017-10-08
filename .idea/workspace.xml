@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ec660fc-4613-4de4-a300-b059dd4766a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithm/Levenshtein.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/bot/BotHistoryKeeper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/skill/TimeSkill.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bot/BotHistoryKeeper$Entry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/bot/BotHistoryKeeper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/skill/JokeSkill.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/skill/TimeSkill.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/skill/JokeSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Main01.class" afterPath="$PROJECT_DIR$/target/classes/main/Main01.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/skill/aiml/AIMLInterpreter.class" afterPath="$PROJECT_DIR$/target/classes/skill/aiml/AIMLInterpreter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main01.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main01.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLInterpreter.java" afterPath="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLInterpreter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/day.xml" afterPath="$PROJECT_DIR$/src/main/resources/day.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/is_prime.xml" afterPath="$PROJECT_DIR$/src/main/resources/is_prime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/day.xml" afterPath="$PROJECT_DIR$/target/classes/day.xml" />
-    </list>
+    <list default="true" id="7ec660fc-4613-4de4-a300-b059dd4766a0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,16 +39,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nerdy.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/nerdy.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="what_happened.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/what_happened.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,11 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AIMLInterpreter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AIMLInterpreter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/skill/aiml/AIMLInterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="411">
               <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main01.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1007,14 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
@@ -1220,6 +1194,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
