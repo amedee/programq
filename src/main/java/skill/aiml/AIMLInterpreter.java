@@ -128,7 +128,8 @@ public class AIMLInterpreter {
         {
             ScriptEngine engine = new ScriptEngineManager().getEngineByName("nashorn");
             try {
-                return engine.eval(n.firstChild(AIMLNodeType.TEXT).getText()).toString();
+                String command = n.firstChild(AIMLNodeType.TEXT).getText();
+                return engine.eval(command).toString();
             } catch (ScriptException e) {
                 e.printStackTrace();
             }

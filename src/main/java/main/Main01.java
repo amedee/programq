@@ -1,13 +1,11 @@
 package main;
 
 import bot.Bot;
-import bot.BotHistoryKeeper;
+import bot.BotLogKeeper;
+import skill.NearMatchSkill;
 import skill.aiml.AIMLSkill;
 
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
-import java.io.File;
 import java.util.Scanner;
 
 /**
@@ -19,7 +17,8 @@ public class Main01 {
 
         Bot bot = new Bot();
         bot.addSkill(new AIMLSkill());
-        bot.addListener(new BotHistoryKeeper());
+        bot.addSkill(new NearMatchSkill());
+        bot.addListener(new BotLogKeeper());
 
         Scanner sc = new Scanner(System.in);
         String line = "";
