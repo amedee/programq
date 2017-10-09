@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+how<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
     <!-- -->
     <!-- Free software (c) 2011 ALICE A.I. Foundation.   -->
@@ -96,16 +96,6 @@
         </template>
     </category>
     <category>
-        <pattern>CUP OF BEANS (OTHER, DRY)</pattern>
-        <template>
-            <random>
-                <li>A cup of beans (other, dry) weighs about 7 ounces, that's 200 grams.</li>
-                <li>About 7 ounces, or 200 grams.</li>
-                <li>200 grams, or 7 ounces.</li>
-            </random>
-        </template>
-    </category>
-    <category>
         <pattern>CUP OF BEANSPROUTS</pattern>
         <template>
             <random>
@@ -120,16 +110,6 @@
         <template>
             <random>
                 <li>A cup of fresh blackberries weighs about 4 ounces, that's 110 grams.</li>
-                <li>About 4 ounces, or 110 grams.</li>
-                <li>110 grams, or 4 ounces.</li>
-            </random>
-        </template>
-    </category>
-    <category>
-        <pattern>CUP OF BLUEBERRIES (WHOLE, FRESH)</pattern>
-        <template>
-            <random>
-                <li>A cup of blueberries (whole, fresh) weighs about 4 ounces, that's 110 grams.</li>
                 <li>About 4 ounces, or 110 grams.</li>
                 <li>110 grams, or 4 ounces.</li>
             </random>
