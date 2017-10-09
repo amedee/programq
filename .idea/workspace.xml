@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ec660fc-4613-4de4-a300-b059dd4766a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/identity.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/skill/TimerSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/MathSkill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/algorithm/Levenshtein.class" afterPath="$PROJECT_DIR$/target/classes/algorithm/Levenshtein.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/algorithm/BKTree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/skill/VectorMatchSkill.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/skill/NearMatchSkill.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/TypoCorrectionSkill.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/bot/BotLogKeeper$Entry.class" afterPath="$PROJECT_DIR$/target/classes/bot/BotLogKeeper$Entry.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/bot/BotLogKeeper.class" afterPath="$PROJECT_DIR$/target/classes/bot/BotLogKeeper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/skill/NearMatchSkill.class" afterPath="$PROJECT_DIR$/target/classes/skill/NearMatchSkill.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/skill/aiml/AIMLSkill.class" afterPath="$PROJECT_DIR$/target/classes/skill/aiml/AIMLSkill.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/skill/aiml/IntegratedAIMLInterpreter.class" afterPath="$PROJECT_DIR$/target/classes/skill/aiml/IntegratedAIMLInterpreter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/Main01.class" afterPath="$PROJECT_DIR$/target/classes/main/Main01.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/skill/MathSkill.class" afterPath="$PROJECT_DIR$/target/classes/skill/MathSkill.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/algorithm/Levenshtein.java" afterPath="$PROJECT_DIR$/src/main/java/algorithm/Levenshtein.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java" afterPath="$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/Main01.java" afterPath="$PROJECT_DIR$/src/main/java/main/Main01.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/skill/MathSkill.java" afterPath="$PROJECT_DIR$/src/main/java/skill/MathSkill.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/numbers.xml" afterPath="$PROJECT_DIR$/src/main/resources/numbers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/is_prime.xml" afterPath="$PROJECT_DIR$/target/classes/is_prime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/punctuation.xml" afterPath="$PROJECT_DIR$/src/main/resources/punctuation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/numbers.xml" afterPath="$PROJECT_DIR$/target/classes/numbers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/punctuation.xml" afterPath="$PROJECT_DIR$/target/classes/punctuation.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,31 +36,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="identity.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/identity.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="141" column="19" lean-forward="true" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="abbreviations.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/abbreviations.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main01.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="375">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="punctuation.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/punctuation.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -68,9 +59,15 @@
       <file leaf-file-name="AIMLInterpreter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/skill/aiml/AIMLInterpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="1680">
               <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="87" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#747#748#0" expanded="false" />
+                <element signature="e#789#790#0" expanded="false" />
+                <element signature="e#2176#2177#0" expanded="false" />
+                <element signature="e#2209#2210#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +75,53 @@
       <file leaf-file-name="MathSkill.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/skill/MathSkill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypoCorrectionSkill.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/skill/TypoCorrectionSkill.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#497#498#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VectorMatchSkill.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/skill/VectorMatchSkill.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BotLogKeeper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="97" column="161" lean-forward="false" selection-start-line="97" selection-start-column="161" selection-end-line="97" selection-end-column="161" />
+              <folding>
+                <element signature="method#createXML#0;class#BotLogKeeper#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BKTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/BKTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="112" column="17" lean-forward="false" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -88,28 +130,8 @@
       <file leaf-file-name="numbers.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/numbers.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bot/Bot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pattern.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/regex/Pattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="2122" column="0" lean-forward="false" selection-start-line="2122" selection-start-column="0" selection-end-line="2122" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -120,17 +142,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Levenshtein.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/Levenshtein.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#3164#3165#0" expanded="false" />
+                <element signature="e#3220#3221#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -188,9 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/insults.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/skill/machinelearning/Conversation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/MAIN02.java" />
         <option value="$PROJECT_DIR$/src/main/java/skill/machinelearning/CornellMovieDatabase.java" />
         <option value="$PROJECT_DIR$/src/main/java/skill/machinelearning/IConversationProvider.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -229,16 +242,19 @@
         <option value="$PROJECT_DIR$/src/main/resources/day.xml" />
         <option value="$PROJECT_DIR$/src/main/java/skill/JokeSkill.java" />
         <option value="$PROJECT_DIR$/src/main/java/bot/BotHistoryKeeper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/is_prime.xml" />
         <option value="$PROJECT_DIR$/src/main/java/algorithm/Levenshtein.java" />
         <option value="$PROJECT_DIR$/src/main/java/skill/aiml/AIMLSkill.java" />
-        <option value="$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java" />
         <option value="$PROJECT_DIR$/src/main/resources/identity.xml" />
         <option value="$PROJECT_DIR$/src/main/java/skill/TimerSkill.java" />
-        <option value="$PROJECT_DIR$/src/main/java/main/Main01.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/punctuation.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/numbers.xml" />
         <option value="$PROJECT_DIR$/src/main/java/skill/MathSkill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/BKTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/skill/TypoCorrectionSkill.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/Main01.java" />
       </list>
     </option>
   </component>
@@ -366,70 +382,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="skill" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AIMLSkill.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="skill" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aiml" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="programq" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -453,10 +405,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,15 +450,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dl4j-examples" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="algorithm" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -888,8 +839,20 @@
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/skill/TypoCorrectionSkill.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/skill/TypoCorrectionSkill.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="108" />
+      <option name="time" value="110" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -898,21 +861,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/nd4j/nd4j-api/0.9.1/nd4j-api-0.9.1.jar!/org/nd4j/versioncheck/VersionCheck.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="175" column="0" lean-forward="false" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nlp/0.9.1/deeplearning4j-nlp-0.9.1.jar!/org/deeplearning4j/models/sequencevectors/SequenceVectors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -986,19 +934,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
-            <element signature="e#1081#1082#0" expanded="false" />
-            <element signature="method#createXML#0;class#BotLogKeeper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/british_to_us.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1027,14 +962,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/punctuation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1068,16 +995,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="12" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/skill/NearMatchSkill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,8 +1080,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/identity.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="141" column="19" lean-forward="true" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
+        <state relative-caret-position="2115">
+          <caret line="141" column="19" lean-forward="false" selection-start-line="141" selection-start-column="19" selection-end-line="141" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1172,40 +1089,161 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/Levenshtein.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/regex/Pattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="30975">
           <caret line="2122" column="0" lean-forward="false" selection-start-line="2122" selection-start-column="0" selection-end-line="2122" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#0#220073#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#48487#48488#0" expanded="false" />
+            <element signature="e#48531#48532#0" expanded="false" />
+            <element signature="e#49482#49483#0" expanded="false" />
+            <element signature="e#49530#49531#0" expanded="false" />
+            <element signature="e#49703#49704#0" expanded="false" />
+            <element signature="e#49733#49734#0" expanded="false" />
+            <element signature="e#50012#50013#0" expanded="false" />
+            <element signature="e#50042#50043#0" expanded="false" />
+            <element signature="e#50700#50701#0" expanded="false" />
+            <element signature="e#50728#50729#0" expanded="false" />
+            <element signature="e#57959#57960#0" expanded="false" />
+            <element signature="e#57997#57998#0" expanded="false" />
+            <element signature="e#68318#68319#0" expanded="false" />
+            <element signature="e#68381#68382#0" expanded="false" />
+            <element signature="e#75891#75892#0" expanded="false" />
+            <element signature="e#75922#75923#0" expanded="false" />
+            <element signature="e#76422#76423#0" expanded="false" />
+            <element signature="e#76461#76462#0" expanded="false" />
+            <element signature="e#76875#76876#0" expanded="false" />
+            <element signature="e#76914#76915#0" expanded="false" />
+            <element signature="e#79893#79894#0" expanded="false" />
+            <element signature="e#79917#79918#0" expanded="false" />
+            <element signature="e#122682#122683#0" expanded="false" />
+            <element signature="e#122711#122712#0" expanded="false" />
+            <element signature="e#122750#122751#0" expanded="false" />
+            <element signature="e#122778#122779#0" expanded="false" />
+            <element signature="e#126231#126232#0" expanded="false" />
+            <element signature="e#126282#126283#0" expanded="false" />
+            <element signature="e#128644#128645#0" expanded="false" />
+            <element signature="e#128689#128690#0" expanded="false" />
+            <element signature="e#131342#131343#0" expanded="false" />
+            <element signature="e#131377#131378#0" expanded="false" />
+            <element signature="e#136722#136723#0" expanded="false" />
+            <element signature="e#136761#136762#0" expanded="false" />
+            <element signature="e#139122#139123#0" expanded="false" />
+            <element signature="e#139161#139162#0" expanded="false" />
+            <element signature="e#143211#143212#0" expanded="false" />
+            <element signature="e#143249#143250#0" expanded="false" />
+            <element signature="e#143480#143481#0" expanded="false" />
+            <element signature="e#143518#143519#0" expanded="false" />
+            <element signature="e#143856#143857#0" expanded="false" />
+            <element signature="e#143913#143914#0" expanded="false" />
+            <element signature="e#144110#144111#0" expanded="false" />
+            <element signature="e#144152#144153#0" expanded="false" />
+            <element signature="e#144524#144525#0" expanded="false" />
+            <element signature="e#144566#144567#0" expanded="false" />
+            <element signature="e#144606#144607#0" expanded="false" />
+            <element signature="e#144675#144676#0" expanded="false" />
+            <element signature="e#144894#144895#0" expanded="false" />
+            <element signature="e#144938#144939#0" expanded="false" />
+            <element signature="e#144978#144979#0" expanded="false" />
+            <element signature="e#145049#145050#0" expanded="false" />
+            <element signature="e#145307#145308#0" expanded="false" />
+            <element signature="e#145384#145385#0" expanded="false" />
+            <element signature="e#145637#145638#0" expanded="false" />
+            <element signature="e#145680#145681#0" expanded="false" />
+            <element signature="e#145917#145918#0" expanded="false" />
+            <element signature="e#145983#145984#0" expanded="false" />
+            <element signature="e#146856#146857#0" expanded="false" />
+            <element signature="e#146892#146893#0" expanded="false" />
+            <element signature="e#147254#147255#0" expanded="false" />
+            <element signature="e#147288#147289#0" expanded="false" />
+            <element signature="e#147939#147940#0" expanded="false" />
+            <element signature="e#147973#147974#0" expanded="false" />
+            <element signature="e#148742#148743#0" expanded="false" />
+            <element signature="e#148776#148777#0" expanded="false" />
+            <element signature="e#149565#149566#0" expanded="false" />
+            <element signature="e#149599#149600#0" expanded="false" />
+            <element signature="e#150489#150490#0" expanded="false" />
+            <element signature="e#150523#150524#0" expanded="false" />
+            <element signature="e#150552#150553#0" expanded="false" />
+            <element signature="e#150599#150600#0" expanded="false" />
+            <element signature="e#151509#151510#0" expanded="false" />
+            <element signature="e#151543#151544#0" expanded="false" />
+            <element signature="e#151572#151573#0" expanded="false" />
+            <element signature="e#151650#151651#0" expanded="false" />
+            <element signature="e#151724#151725#0" expanded="false" />
+            <element signature="e#151773#151774#0" expanded="false" />
+            <element signature="e#153329#153330#0" expanded="false" />
+            <element signature="e#153364#153365#0" expanded="false" />
+            <element signature="e#153908#153909#0" expanded="false" />
+            <element signature="e#153949#153950#0" expanded="false" />
+            <element signature="e#167918#167919#0" expanded="false" />
+            <element signature="e#167976#167977#0" expanded="false" />
+            <element signature="e#168015#168016#0" expanded="false" />
+            <element signature="e#168064#168065#0" expanded="false" />
+            <element signature="e#170643#170644#0" expanded="false" />
+            <element signature="e#170690#170691#0" expanded="false" />
+            <element signature="e#171592#171593#0" expanded="false" />
+            <element signature="e#171632#171633#0" expanded="false" />
+            <element signature="e#173773#173774#0" expanded="false" />
+            <element signature="e#173813#173814#0" expanded="false" />
+            <element signature="e#173879#173880#0" expanded="false" />
+            <element signature="e#173941#173942#0" expanded="false" />
+            <element signature="e#173980#173981#0" expanded="false" />
+            <element signature="e#174027#174028#0" expanded="false" />
+            <element signature="e#177368#177369#0" expanded="false" />
+            <element signature="e#177421#177422#0" expanded="false" />
+            <element signature="e#183068#183069#0" expanded="false" />
+            <element signature="e#183122#183123#0" expanded="false" />
+            <element signature="e#185260#185261#0" expanded="false" />
+            <element signature="e#185300#185301#0" expanded="false" />
+            <element signature="e#186043#186044#0" expanded="false" />
+            <element signature="e#186083#186084#0" expanded="false" />
+            <element signature="e#187233#187234#0" expanded="false" />
+            <element signature="e#187289#187290#0" expanded="false" />
+            <element signature="e#188699#188700#0" expanded="false" />
+            <element signature="e#188746#188747#0" expanded="false" />
+            <element signature="e#191265#191266#0" expanded="false" />
+            <element signature="e#191312#191313#0" expanded="false" />
+            <element signature="e#215964#215965#0" expanded="false" />
+            <element signature="e#216009#216010#0" expanded="false" />
+            <element signature="e#218047#218048#0" expanded="false" />
+            <element signature="e#218108#218109#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bot/Bot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="810">
           <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#405#406#0" expanded="false" />
+            <element signature="e#451#452#0" expanded="false" />
+            <element signature="e#515#516#0" expanded="false" />
+            <element signature="e#564#565#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/skill/aiml/AIMLInterpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="1680">
           <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/numbers.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#789#790#0" expanded="false" />
+            <element signature="e#2176#2177#0" expanded="false" />
+            <element signature="e#2209#2210#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1213,22 +1251,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3164#3165#0" expanded="false" />
+            <element signature="e#3220#3221#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/punctuation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/numbers.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/skill/MathSkill.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/BKTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="112" column="17" lean-forward="false" selection-start-line="112" selection-start-column="17" selection-end-line="112" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bot/BotLogKeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="97" column="161" lean-forward="false" selection-start-line="97" selection-start-column="161" selection-end-line="97" selection-end-column="161" />
+          <folding>
+            <element signature="method#createXML#0;class#BotLogKeeper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/skill/TypoCorrectionSkill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/skill/VectorMatchSkill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/Main01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="375">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>

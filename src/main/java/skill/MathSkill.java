@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
  */
 public class MathSkill implements ISkill{
 
-    private String[] ops = {"+","-","*","/","^","²","³"};
+    private String[] ops = {"+","-","*","/"};
     private String[] bks = {"(",")","{","}","[","]"};
 
     @Override

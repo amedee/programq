@@ -29,6 +29,13 @@ public class BotLogKeeper implements IBotListener{
         private String output;
         private String skill;
         private long timestamp;
+        public Entry(String input, String output, String skill, long timestamp)
+        {
+            this.input = input;
+            this.output = output;
+            this.skill = skill;
+            this.timestamp = timestamp;
+        }
         public String getInput(){ return input; }
         public String getOutput(){ return output; }
         public String getSkill(){ return skill; }
@@ -67,11 +74,7 @@ public class BotLogKeeper implements IBotListener{
     private void addToLog(String input, String output, ISkill skill)
     {
         // create entry
-        Entry e = new Entry();
-        e.input = input;
-        e.output = output;
-        e.skill = skill.getClass().getSimpleName();
-        e.timestamp = System.currentTimeMillis();
+        Entry e = new Entry(input, output, skill.getClass().getSimpleName(), System.currentTimeMillis());
 
         // add to entryList
         entryList.add(e);
@@ -92,11 +95,7 @@ public class BotLogKeeper implements IBotListener{
         try {
             for(Element e : new SAXBuilder().build(file).getRootElement().getChildren())
             {
-                Entry entry = new Entry();
-                entry.input = e.getChildText("input");
-                entry.output = e.getChildText("output");
-                entry.skill = e.getChildText("skill");
-                entry.timestamp = Long.parseLong(e.getChildText("timestamp"));
+                Entry entry = new Entry(e.getChildText("input"), e.getChildText("output"), e.getChildText("skill"), Long.parseLong(e.getChildText("timestamp")));
                 retval.add(entry);
             }
         } catch (Exception e) {
