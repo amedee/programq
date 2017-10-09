@@ -63,7 +63,8 @@ class EntryMetric implements BKTree.Metric<BotLogKeeper.Entry>
 {
     @Override
     public int distance(BotLogKeeper.Entry obj0, BotLogKeeper.Entry obj1) {
-        double rDist = Levenshtein.relativeDistance(obj0.getInput().toUpperCase(), obj1.getInput().toUpperCase());
+        double rDist = Levenshtein.relativeDistance(obj0.getInput().toUpperCase(),
+                                                    obj1.getInput().toUpperCase());
         return (int) java.lang.Math.round(rDist * 100);
     }
 }

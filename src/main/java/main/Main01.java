@@ -30,5 +30,5 @@ public class Main01 {
             System.out.println(bot.process(line));
         }
     }
-    
+
 }

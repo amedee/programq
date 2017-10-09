@@ -10,6 +10,31 @@
     <!-- Last modified 10/5/2011 -->
     <!-- -->
     <category>
+        <pattern>(.*) PI (.*)</pattern>
+        <template>
+            <redirect>\1 3.14159265359 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PI (.*)</pattern>
+        <template>
+            <redirect>3.14159265359 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PI</pattern>
+        <template>
+            <redirect>\1 3.14159265359</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PI</pattern>
+        <template>
+            <redirect>3.14159265359</redirect>
+        </template>
+    </category>
+    <!-- integers -->
+    <category>
         <pattern>(.*) ZERO (.*)</pattern>
         <template>
             <redirect>\1 0 \2</redirect>
