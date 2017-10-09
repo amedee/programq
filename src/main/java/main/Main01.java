@@ -3,7 +3,7 @@ package main;
 import bot.Bot;
 import bot.BotLogKeeper;
 import skill.MathSkill;
-import skill.TypoCorrectionSkill;
+import skill.NearMatchSkill;
 import skill.aiml.AIMLSkill;
 
 import javax.script.ScriptException;
@@ -17,10 +17,10 @@ public class Main01 {
     public static void main(String[] args) throws ScriptException {
 
         Bot bot = new Bot();
-        bot.addSkill(new AIMLSkill());              // AIML
-        bot.addSkill(new MathSkill());              // simple mathematical operations
-        bot.addSkill(new TypoCorrectionSkill());    // levenshtein based corrections
-        bot.addListener(new BotLogKeeper());        // logging
+        bot.addSkill(new AIMLSkill());
+        bot.addSkill(new MathSkill());
+        bot.addSkill(new NearMatchSkill());
+        bot.addListener(new BotLogKeeper());
 
         Scanner sc = new Scanner(System.in);
         String line = "";

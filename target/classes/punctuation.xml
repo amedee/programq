@@ -22,14 +22,28 @@
             <redirect>\1 \2</redirect>
         </template>
     </category>
+    <!-- , -->
     <category>
-        <pattern>(.*),(.*)</pattern>
+        <pattern>(.*)\,([^0-9].*)</pattern>
         <template>
             <redirect>\1 \2</redirect>
         </template>
     </category>
     <category>
-        <pattern>(.*)\.(.*)</pattern>
+        <pattern>(.*[^0-9])\,(.*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <!-- . -->
+    <category>
+        <pattern>(.*)\.([^0-9].*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*[^0-9])\.(.*)</pattern>
         <template>
             <redirect>\1 \2</redirect>
         </template>

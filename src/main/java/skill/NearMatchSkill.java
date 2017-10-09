@@ -1,6 +1,5 @@
 package skill;
 
-import algorithm.BKTree;
 import algorithm.Levenshtein;
 import bot.Bot;
 import bot.BotLogKeeper;
@@ -13,12 +12,12 @@ import java.util.List;
 /**
  * Created by joris on 9/15/17.
  */
-public class TypoCorrectionSkill implements ISkill{
+public class NearMatchSkill implements ISkill{
 
-    private static int MAX_RELATIVE_DISTANCE = 10;
-    private BKTree<BotLogKeeper.Entry> bkTree = new BKTree<>(new EntryMetric());
+    private static double MAX_RELATIVE_DISTANCE = 0.1;
+    private List<BotLogKeeper.Entry> entryList = new ArrayList<>();
 
-    public TypoCorrectionSkill()
+    public NearMatchSkill()
     {
         loadEntries();
     }
@@ -31,23 +30,27 @@ public class TypoCorrectionSkill implements ISkill{
         {
             if(!xmlFile.getName().endsWith(".xml"))
                 continue;
-            bkTree.addAll(BotLogKeeper.loadEntries(xmlFile));
+            entryList.addAll(BotLogKeeper.loadEntries(xmlFile));
         }
-        System.out.println("loaded " + bkTree.size() + " log entries.");
+        System.out.println("loaded " + entryList.size() + " log entries.");
     }
 
     @Override
     public boolean isExampleUtterance(String s) {
-        BotLogKeeper.Entry tmp = new BotLogKeeper.Entry(s, "", "", 0);
-        return !bkTree.get(tmp,MAX_RELATIVE_DISTANCE).isEmpty();
+        for(BotLogKeeper.Entry e : entryList)
+        {
+            if(e.getSkill().equals(getClass().getSimpleName()))
+                continue;
+            if(Levenshtein.relativeDistance(e.getInput().toUpperCase(), s.toUpperCase()) < MAX_RELATIVE_DISTANCE)
+                return true;
+        }
+        return false;
     }
 
     @Override
     public String process(Bot bot, String s) {
-        BotLogKeeper.Entry tmp = new BotLogKeeper.Entry(s, "", "", 0);
-
         BotLogKeeper.Entry bestEntry = null;
-        for(BotLogKeeper.Entry e : bkTree.get(tmp, MAX_RELATIVE_DISTANCE))
+        for(BotLogKeeper.Entry e : entryList)
         {
             if(bestEntry == null || Levenshtein.relativeDistance(e.getInput(), s) < Levenshtein.relativeDistance(bestEntry.getInput(), s))
             {
@@ -56,14 +59,5 @@ public class TypoCorrectionSkill implements ISkill{
         }
         System.out.println("~[" + bestEntry.getInput() + "]");
         return bot.process(bestEntry.getInput());
-    }
-}
-
-class EntryMetric implements BKTree.Metric<BotLogKeeper.Entry>
-{
-    @Override
-    public int distance(BotLogKeeper.Entry obj0, BotLogKeeper.Entry obj1) {
-        double rDist = Levenshtein.relativeDistance(obj0.getInput().toUpperCase(), obj1.getInput().toUpperCase());
-        return (int) java.lang.Math.round(rDist * 100);
     }
 }
