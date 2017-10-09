@@ -24,7 +24,8 @@ public class Levenshtein {
             costs[0] = i;
             int nw = i - 1;
             for (int j = 1; j <= b.length(); j++) {
-                int cj = Math.min(1 + Math.min(costs[j], costs[j - 1]), a.charAt(i - 1) == b.charAt(j - 1) ? nw : nw + 1);
+                int transitionCost = characterTransitionCost(a.charAt(i - 1), b.charAt(j - 1)) + nw;
+                int cj = Math.min(1 + Math.min(costs[j], costs[j - 1]), transitionCost);
                 nw = costs[j];
                 costs[j] = cj;
             }
@@ -32,4 +33,12 @@ public class Levenshtein {
         return costs[b.length()];
     }
 
+    private static int characterTransitionCost(char a, char b)
+    {
+        if(a == b)
+            return 0;
+        if(Character.isAlphabetic(a) && Character.isAlphabetic(b))
+            return 1;
+        return 2;
+    }
 }

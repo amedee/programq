@@ -2,6 +2,7 @@ package main;
 
 import bot.Bot;
 import bot.BotLogKeeper;
+import skill.MathSkill;
 import skill.NearMatchSkill;
 import skill.aiml.AIMLSkill;
 
@@ -17,6 +18,7 @@ public class Main01 {
 
         Bot bot = new Bot();
         bot.addSkill(new AIMLSkill());
+        bot.addSkill(new MathSkill());
         bot.addSkill(new NearMatchSkill());
         bot.addListener(new BotLogKeeper());
 

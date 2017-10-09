@@ -12,25 +12,25 @@
     <category>
         <pattern>(.*) ZERO (.*)</pattern>
         <template>
-            <redirect>\1 ﻿0 \2</redirect>
+            <redirect>\1 0 \2</redirect>
         </template>
     </category>
     <category>
         <pattern>ZERO (.*)</pattern>
         <template>
-            <redirect>﻿0 \1</redirect>
+            <redirect>0 \1</redirect>
         </template>
     </category>
     <category>
         <pattern>(.*) ZERO</pattern>
         <template>
-            <redirect>\1 ﻿0</redirect>
+            <redirect>\1 0</redirect>
         </template>
     </category>
     <category>
         <pattern>ZERO</pattern>
         <template>
-            <redirect>﻿0</redirect>
+            <redirect>0</redirect>
         </template>
     </category>
     <category>

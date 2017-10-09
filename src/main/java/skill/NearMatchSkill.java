@@ -41,7 +41,7 @@ public class NearMatchSkill implements ISkill{
         {
             if(e.getSkill().equals(getClass().getSimpleName()))
                 continue;
-            if(Levenshtein.relativeDistance(e.getInput(), s) < MAX_RELATIVE_DISTANCE)
+            if(Levenshtein.relativeDistance(e.getInput().toUpperCase(), s.toUpperCase()) < MAX_RELATIVE_DISTANCE)
                 return true;
         }
         return false;
