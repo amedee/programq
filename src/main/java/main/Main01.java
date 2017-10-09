@@ -3,7 +3,7 @@ package main;
 import bot.Bot;
 import bot.BotLogKeeper;
 import skill.MathSkill;
-import skill.NearMatchSkill;
+import skill.TypoCorrectionSkill;
 import skill.aiml.AIMLSkill;
 
 import javax.script.ScriptException;
@@ -19,7 +19,7 @@ public class Main01 {
         Bot bot = new Bot();
         bot.addSkill(new AIMLSkill());
         bot.addSkill(new MathSkill());
-        bot.addSkill(new NearMatchSkill());
+        bot.addSkill(new TypoCorrectionSkill());
         bot.addListener(new BotLogKeeper());
 
         Scanner sc = new Scanner(System.in);
@@ -30,5 +30,5 @@ public class Main01 {
             System.out.println(bot.process(line));
         }
     }
-
+g
 }
