@@ -11,6 +11,7 @@ import java.io.File;
 
 /**
  * Created by joris on 9/15/17.
+ * This ISkill implementation allows the Bot to handle typos
  */
 public class TypoCorrectionSkill implements ISkill{
 
@@ -58,6 +59,9 @@ public class TypoCorrectionSkill implements ISkill{
     }
 }
 
+/**
+ * This class represents a BKTree.Metric over entries in the conversation history of the Bot
+ */
 class EntryMetric implements BKTree.Metric<Entry>
 {
     @Override

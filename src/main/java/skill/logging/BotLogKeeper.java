@@ -19,12 +19,20 @@ import java.util.List;
 
 /**
  * Created by joris on 9/25/17.
+ * This ISkill implementation ensures the Bot keeps records, which is useful for later machine learning
  */
 public class BotLogKeeper implements IBotListener {
 
+    // when to start flushing the cache
     private int LOG_FLUSH_THRESHOLD = 8;
+
+    // where to output the records to
     private static File HOME = new File(System.getProperty("user.home"), BotLogKeeper.class.getSimpleName());
 
+    /**
+     * Get the directory at which this BotLogKeeper stores its historic records
+     * @return the File at which this BotLogKeeper stores its records
+     */
     public static File getLogDirectory()
     {
         return HOME;
@@ -87,6 +95,11 @@ public class BotLogKeeper implements IBotListener {
         return retval;
     }
 
+    /**
+     * Flush the log to the filesystem
+     * @throws IOException
+     * @throws JDOMException
+     */
     private void flushLog() throws IOException, JDOMException
     {
         List<Entry> tmp = new ArrayList<>(entryList);
@@ -106,6 +119,13 @@ public class BotLogKeeper implements IBotListener {
         }
     }
 
+    /**
+     * Append entries to an existing log file
+     * @param outputFile the existing log file
+     * @param entries the entries to be added to the log file
+     * @throws IOException
+     * @throws JDOMException
+     */
     private void appendToXML(File outputFile, List<Entry> entries) throws IOException, JDOMException
     {
         Document doc = new SAXBuilder().build(outputFile);
@@ -129,6 +149,12 @@ public class BotLogKeeper implements IBotListener {
         xmlOutput.output(doc, new FileWriter(outputFile));
     }
 
+    /**
+     * Creates a new log file with the given entries
+     * @param outputFile the log file
+     * @param entries the entries to be added to the log file
+     * @throws IOException
+     */
     private void createXML(File outputFile, List<Entry> entries) throws IOException
     {
         Document doc = new Document();

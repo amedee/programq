@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 
 /**
  * Created by joris on 9/15/17.
+ * This ISkill implementation allows the bot to do some basic math
  */
 public class MathSkill implements ISkill{
 
