@@ -25,8 +25,28 @@ public class Entry
             this.skill = skill;
             this.timestamp = timestamp;
         }
+
+        /**
+         *  Get the input
+         * @return the input
+         */
         public String getInput(){ return input; }
+
+        /**
+         * Get the output
+         * @return the output
+         */
         public String getOutput(){ return output; }
+
+        /**
+         * Get the ISkill responsible for creating the output this log entry
+         * @return the name of the ISkill responsible for this log entry
+         */
         public String getSkill(){ return skill; }
+
+        /**
+         * Get the timestamp at which the log entry was created
+         * @return
+         */
         public long getTimestamp(){ return timestamp; }
     }
