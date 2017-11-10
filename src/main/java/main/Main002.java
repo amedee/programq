@@ -9,54 +9,10 @@ import java.util.Scanner;
 /**
  * Created by joris on 9/27/17.
  */
-public class SynonymAIML {
+public class Main002 {
 
     public static void main(String[] args) throws FileNotFoundException
     {
-        List<String> l0 = new ArrayList<>();
-        List<String> l1 = new ArrayList<>();
-
-        for(int i=1;i<=12;i++)
-        {
-            int x = i;
-            int y0 = x - 1;
-            int y1 = 12 + i;
-            int y2 = (12 + i) - 1;
-
-            // half past
-
-            l0.add("half past " + x + " pm");
-            l1.add(y1 + ":30");
-
-            l0.add("half past " + x + " am");
-            l1.add(x + ":30");
-
-            // quarter past
-
-            l0.add("quarter past " + x + " pm");
-            l1.add(y1 + ":15");
-
-            l0.add("quarter past " + x + " am");
-            l1.add(x + ":15");
-
-            // quarter to
-
-            l0.add("quarter to " + x + " pm");
-            l1.add(y2 + ":45");
-
-            l0.add("quarter to " + x + " am");
-            l1.add(y0 + ":45");
-
-            // hour
-
-            l0.add(x + " pm");
-            l1.add(y1 + ":00");
-
-            l0.add(x + " am");
-            l1.add(x + ":00");
-        }
-
-        fromArray(l0.toArray(new String[]{}), l1.toArray(new String[]{}));
     }
 
     public static void fromFile(String inputCSV) throws FileNotFoundException

@@ -1,5 +1,7 @@
-package bot;
+package skill.logging;
 
+import bot.IBotListener;
+import bot.ISkill;
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
@@ -18,29 +20,10 @@ import java.util.List;
 /**
  * Created by joris on 9/25/17.
  */
-public class BotLogKeeper implements IBotListener{
+public class BotLogKeeper implements IBotListener {
 
     private int LOG_FLUSH_THRESHOLD = 8;
     private static File HOME = new File(System.getProperty("user.home"), BotLogKeeper.class.getSimpleName());
-
-    public static class Entry
-    {
-        private String input;
-        private String output;
-        private String skill;
-        private long timestamp;
-        public Entry(String input, String output, String skill, long timestamp)
-        {
-            this.input = input;
-            this.output = output;
-            this.skill = skill;
-            this.timestamp = timestamp;
-        }
-        public String getInput(){ return input; }
-        public String getOutput(){ return output; }
-        public String getSkill(){ return skill; }
-        public long getTimestamp(){ return timestamp; }
-    }
 
     public static File getLogDirectory()
     {
@@ -60,11 +43,11 @@ public class BotLogKeeper implements IBotListener{
         }
         else{
             Entry tuple = entryList.get(entryList.size() - 1);
-            if(!tuple.output.equals(output)) {
+            if(!tuple.getOutput().equals(output)) {
                 addToLog(input, output, skill);
             }
             else{
-                long timeDiff = java.lang.Math.abs(System.currentTimeMillis() - tuple.timestamp);
+                long timeDiff = java.lang.Math.abs(System.currentTimeMillis() - tuple.getTimestamp());
                 if(timeDiff > 500)
                     addToLog(input, output, skill);
             }
@@ -131,10 +114,10 @@ public class BotLogKeeper implements IBotListener{
         for(Entry e : entries)
         {
             Element entryElement = new Element("entry");
-            entryElement.addContent(new Element("input").setText(e.input));
-            entryElement.addContent(new Element("output").setText(e.output));
-            entryElement.addContent(new Element("skill").setText(e.skill));
-            entryElement.addContent(new Element("timestamp").setText(e.timestamp+""));
+            entryElement.addContent(new Element("input").setText(e.getInput()));
+            entryElement.addContent(new Element("output").setText(e.getOutput()));
+            entryElement.addContent(new Element("skill").setText(e.getSkill()));
+            entryElement.addContent(new Element("timestamp").setText(e.getTimestamp()+""));
             rootElement.addContent(entryElement);
         }
 
@@ -156,10 +139,10 @@ public class BotLogKeeper implements IBotListener{
         for(Entry e : entries)
         {
             Element entryElement = new Element("entry");
-            entryElement.addContent(new Element("input").setText(e.input));
-            entryElement.addContent(new Element("output").setText(e.output));
-            entryElement.addContent(new Element("skill").setText(e.skill));
-            entryElement.addContent(new Element("timestamp").setText(e.timestamp+""));
+            entryElement.addContent(new Element("input").setText(e.getInput()));
+            entryElement.addContent(new Element("output").setText(e.getOutput()));
+            entryElement.addContent(new Element("skill").setText(e.getSkill()));
+            entryElement.addContent(new Element("timestamp").setText(e.getTimestamp()+""));
             rootElement.addContent(entryElement);
         }
 

@@ -3,12 +3,11 @@ package skill;
 import algorithm.BKTree;
 import algorithm.Levenshtein;
 import bot.Bot;
-import bot.BotLogKeeper;
+import skill.logging.BotLogKeeper;
 import bot.ISkill;
+import skill.logging.Entry;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by joris on 9/15/17.
@@ -16,7 +15,7 @@ import java.util.List;
 public class TypoCorrectionSkill implements ISkill{
 
     private static int MAX_RELATIVE_DISTANCE = 10;
-    private BKTree<BotLogKeeper.Entry> bkTree = new BKTree<>(new EntryMetric());
+    private BKTree<Entry> bkTree = new BKTree<>(new EntryMetric());
 
     public TypoCorrectionSkill()
     {
@@ -38,16 +37,16 @@ public class TypoCorrectionSkill implements ISkill{
 
     @Override
     public boolean isExampleUtterance(String s) {
-        BotLogKeeper.Entry tmp = new BotLogKeeper.Entry(s, "", "", 0);
+        Entry tmp = new Entry(s, "", "", 0);
         return !bkTree.get(tmp,MAX_RELATIVE_DISTANCE).isEmpty();
     }
 
     @Override
     public String process(Bot bot, String s) {
-        BotLogKeeper.Entry tmp = new BotLogKeeper.Entry(s, "", "", 0);
+        Entry tmp = new Entry(s, "", "", 0);
 
-        BotLogKeeper.Entry bestEntry = null;
-        for(BotLogKeeper.Entry e : bkTree.get(tmp, MAX_RELATIVE_DISTANCE))
+        Entry bestEntry = null;
+        for(Entry e : bkTree.get(tmp, MAX_RELATIVE_DISTANCE))
         {
             if(bestEntry == null || Levenshtein.relativeDistance(e.getInput(), s) < Levenshtein.relativeDistance(bestEntry.getInput(), s))
             {
@@ -59,10 +58,10 @@ public class TypoCorrectionSkill implements ISkill{
     }
 }
 
-class EntryMetric implements BKTree.Metric<BotLogKeeper.Entry>
+class EntryMetric implements BKTree.Metric<Entry>
 {
     @Override
-    public int distance(BotLogKeeper.Entry obj0, BotLogKeeper.Entry obj1) {
+    public int distance(Entry obj0, Entry obj1) {
         double rDist = Levenshtein.relativeDistance(obj0.getInput().toUpperCase(),
                                                     obj1.getInput().toUpperCase());
         return (int) java.lang.Math.round(rDist * 100);

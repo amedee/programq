@@ -2,7 +2,6 @@ package skill.aiml;
 
 import bot.Bot;
 import bot.ISkill;
-import main.Main01;
 
 /**
  * Created by joris on 9/21/17.

@@ -1,7 +1,7 @@
 package main;
 
 import bot.Bot;
-import bot.BotLogKeeper;
+import skill.logging.BotLogKeeper;
 import skill.MathSkill;
 import skill.TypoCorrectionSkill;
 import skill.aiml.AIMLSkill;
@@ -12,7 +12,7 @@ import java.util.Scanner;
 /**
  * Created by joris on 9/15/17.
  */
-public class Main01 {
+public class Main001 {
 
     public static void main(String[] args) throws ScriptException {
 

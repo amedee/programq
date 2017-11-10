@@ -2,10 +2,16 @@ package algorithm;
 
 /**
  * Created by joris on 10/8/17.
+ * This class calculates the Levenshtein distance (also known as edit-distance) between two Strings.
  */
 public class Levenshtein {
 
-
+    /**
+     * Calculates the relative Levenshtein distance between two Strings
+     * @param a first String
+     * @param b second String
+     * @return distance(a, b) / max(a.length(), b.length())
+     */
     public static double relativeDistance(String a, String b)
     {
         double d = distance(a, b);
@@ -13,6 +19,12 @@ public class Levenshtein {
         return d;
     }
 
+    /**
+     * Calculates the Levenshtein distance between two Strings
+     * @param a first String
+     * @param b second String
+     * @return the minimal number of edits (character inserts, character changes, character deletions) needed to transform a into b
+     */
     public static int distance(String a, String b)
     {
         // i == 0
