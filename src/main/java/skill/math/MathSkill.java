@@ -1,4 +1,4 @@
-package skill;
+package skill.math;
 
 import bot.Bot;
 import bot.ISkill;

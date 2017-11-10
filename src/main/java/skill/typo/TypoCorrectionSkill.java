@@ -1,4 +1,4 @@
-package skill;
+package skill.typo;
 
 import algorithm.BKTree;
 import algorithm.Levenshtein;

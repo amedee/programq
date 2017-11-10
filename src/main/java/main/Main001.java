@@ -1,9 +1,10 @@
 package main;
 
 import bot.Bot;
+import skill.calendar.FixedCalendarQuerySkill;
 import skill.logging.BotLogKeeper;
-import skill.MathSkill;
-import skill.TypoCorrectionSkill;
+import skill.math.MathSkill;
+import skill.typo.TypoCorrectionSkill;
 import skill.aiml.AIMLSkill;
 
 import javax.script.ScriptException;
@@ -19,6 +20,7 @@ public class Main001 {
         Bot bot = new Bot();
         bot.addSkill(new AIMLSkill());
         bot.addSkill(new MathSkill());
+        bot.addSkill(new FixedCalendarQuerySkill());
         bot.addSkill(new TypoCorrectionSkill());
         bot.addListener(new BotLogKeeper());
 
