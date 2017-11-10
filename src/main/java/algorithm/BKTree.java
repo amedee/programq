@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * Created by joris on 9/24/17.
+ * This class implements a generic BK tree datastructure
  */
 public class BKTree<T> {
 
@@ -22,10 +23,19 @@ public class BKTree<T> {
      */
     static class Node<T>
     {
+        // child nodes
         private Map<Integer, Node<T>> children;
+
+        // parent node
         private Node parent;
+
+        // data inside the node
         private T data;
 
+        /**
+         * Construct a new BKTree.Node with given data
+         * @param obj
+         */
         public Node(T obj)
         {
             this.data = obj;
@@ -33,6 +43,13 @@ public class BKTree<T> {
             this.parent = null;
         }
 
+        /**
+         * add a BKTree.Node to this BKTree.Node
+         * This method might recursively call itself on the children of the current BKTree.Node
+         * @param c BKTree.Node to be added
+         * @param m BKTree.Metric to be used when inserting items in the subtree
+         * @return true if the node was added successfully, false otherwise
+         */
         public boolean add(Node<T> c, Metric<T> m)
         {
             int dist = m.distance(c.data, data);
@@ -47,6 +64,13 @@ public class BKTree<T> {
             }
         }
 
+        /**
+         * Retrieve all BKTree.Nodes that match the given data, with a given tolerance
+         * @param obj the data to be searched for
+         * @param m the BKTree.Metric to be used when comparing data inside the BKTree.Node
+         * @param tolerance the tolerance to be considered when traversing the BKTree
+         * @return
+         */
         public Collection<Node<T>> get(T obj, Metric<T> m, int tolerance)
         {
             Set<Node<T>> out = new HashSet<>();
@@ -76,6 +100,10 @@ public class BKTree<T> {
             return out;
         }
 
+        /**
+         * Get the size of the subtree rooted at this BKTree.Node
+         * @return the size of the subtree rooted at this BKtree.Node
+         */
         public int size()
         {
             int s = 0;
@@ -86,14 +114,26 @@ public class BKTree<T> {
         }
     }
 
+    // the BKTree.Metric being used for this BKtree
     private Metric<T> metric = null;
+
+    // the root node
     private Node<T> root = null;
 
+    /**
+     * Construct a new BKTree with a given BKTree.Metric
+     * @param m
+     */
     public BKTree(Metric m)
     {
         this.metric = m;
     }
 
+    /**
+     * Add an object to this BKtree
+     * @param obj the object to be added to the tree
+     * @return true if the object was added successfully, false otherwise
+     */
     public boolean add(T obj)
     {
         if(root == null)
@@ -107,6 +147,11 @@ public class BKTree<T> {
         }
     }
 
+    /**
+     * Add a collection of objects to this BKtree
+     * @param other the collection to be added into this BKtree
+     * @return true if any of the objects was added successfully, false otherwise
+     */
     public boolean addAll(Collection<T> other)
     {
         boolean treeChanged = false;
@@ -115,21 +160,40 @@ public class BKTree<T> {
         return treeChanged;
     }
 
+    /**
+     * Check whether this BKTree contains a given object
+     * @param obj the object to be searched
+     * @return true if this BKTree contains the query object, false otherwise
+     */
     public boolean contains(T obj)
     {
         return contains(obj, 0);
     }
 
+    /**
+     * Check whether this BKTree contains a given object
+     * @param obj the object to be searched
+     * @param maxDistance the maximum tolerance allowed when matching the query object
+     * @return true if this BKTree contains the query object, false otherwise
+     */
     public boolean contains(T obj, int maxDistance)
     {
         return !get(obj, maxDistance).isEmpty();
     }
 
+    /**
+     * Test whether this BKtree is empty
+     * @return true if this BKTree contains no nodes, false otherwise
+     */
     public boolean isEmpty()
     {
         return size() == 0;
     }
 
+    /**
+     * Get the size of this BKTree
+     * @return the number of nodes in this BKTree
+     */
     public int size()
     {
         if(root == null)
@@ -137,6 +201,12 @@ public class BKTree<T> {
         return root.size();
     }
 
+    /**
+     * Retrieve all objects inside this BKTree that match the query object within a specified tolerance
+     * @param obj the query object
+     * @param maxDistance the maximal allowed tolerance when matching the query object
+     * @return
+     */
     public Collection<T> get(T obj, int maxDistance)
     {
         if(root == null)

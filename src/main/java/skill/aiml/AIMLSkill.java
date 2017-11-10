@@ -40,7 +40,7 @@ public class AIMLSkill implements ISkill {
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("swearwords.xml")));
         interpreter.addAIMLNodes(AIMLReader.interpretXML(AIMLSkill.class.getClassLoader().getResourceAsStream("insults.xml")));
 
-        System.out.println("loaded " + interpreter.countNodes() + " nodes.");
+        System.out.println("loaded " + interpreter.size() + " nodes.");
     }
 
     @Override
